@@ -7,6 +7,8 @@ public class SpawnPipes : MonoBehaviour
     private Vector3 _positionTube = Vector3.zero;
     private Timer _timer;
 
+    private const float _tubeLower = -2.5f, _tupeUpper = 2.5f;
+
     void Start()
     {
         _pooler = ObjectPooler.Instance;
@@ -29,7 +31,7 @@ public class SpawnPipes : MonoBehaviour
 
     public void SpawnTube()
     {
-        _positionTube.y = Random.Range(-2.5f, 2.5f);
+        _positionTube.y = Random.Range(_tubeLower, _tupeUpper);
 
         _pooler.SpawnFromPool("Tube", _positionTube, Quaternion.identity);
     }

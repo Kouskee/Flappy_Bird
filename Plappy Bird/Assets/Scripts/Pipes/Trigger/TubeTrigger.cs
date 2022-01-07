@@ -4,9 +4,9 @@ using UnityEngine;
 public class TubeTrigger : MonoBehaviour
 {
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter(Collider other) //ToDo
     {
-        if (other.gameObject.GetComponent<BirdMove>())
+        if (other.gameObject.GetComponent<BirdMovement>())
         {
         }
     }

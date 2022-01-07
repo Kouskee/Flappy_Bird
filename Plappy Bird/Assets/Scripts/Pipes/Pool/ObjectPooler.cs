@@ -25,7 +25,7 @@ public class ObjectPooler : MonoBehaviour
     public List<Pool> _pools;
     public Dictionary<string, Queue<GameObject>> _poolDictionary;
 
-    void Start()
+    private void Start()
     {
         _poolDictionary = new Dictionary<string, Queue<GameObject>>();
 
