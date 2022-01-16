@@ -1,7 +1,5 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class BirdMovement : MonoBehaviour
 {
@@ -14,12 +12,11 @@ public class BirdMovement : MonoBehaviour
 
     private void Update()
     {
-        Jump();
         HandleGravity();
     }
-    private void Jump()
+    public void Jump(InputAction.CallbackContext context)
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (context.performed)
         {
             _direction.y = Mathf.Clamp(_direction.y + Mathf.Sqrt(_jumpPower * -3.0f * _gravityValue), -50f, 14f);
             _controller.Move(_direction * Time.deltaTime);
