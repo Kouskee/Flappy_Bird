@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7598604658993125725}
   - component: {fileID: 5041822910305064689}
+  - component: {fileID: 842051152380755119}
   m_Layer: 0
   m_Name: Pipes
   m_TagString: Untagged
@@ -46,6 +47,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5fa2cc57ffae1b4a950913d30f0ebcc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speedPipes: -6
+--- !u!65 &842051152380755119
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7598604658993125726}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &7598604659087476641
 GameObject:
   m_ObjectHideFlags: 0
